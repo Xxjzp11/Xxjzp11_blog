@@ -20,7 +20,7 @@ module.exports = {
         //   label: 'Docs',
         //   position: 'left',
         // },
-        // {to: 'blog', label: 'Blog', position: 'right'},
+        {to: '/', label: 'Blog', position: 'right'},
         {
           href: 'https://github.com/Xxjzp11/',
           label: 'GitHub',
@@ -64,10 +64,10 @@ module.exports = {
         {
           title: 'More',
           items: [
-            // {
-            //   label: 'Blog',
-            //   to: 'blog',
-            // },
+            {
+              label: 'Blog',
+              to: '/',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
