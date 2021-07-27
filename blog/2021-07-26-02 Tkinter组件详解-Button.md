@@ -151,7 +151,7 @@ b = tk.Button(master, text="点它 ->", font=('微软雅黑',50), image=photo, c
 
 ## 参数
 
-Button(master=None, **options) (class)
+**Button(master=None, \**options) (class)**
 
 master -- 父组件
 
