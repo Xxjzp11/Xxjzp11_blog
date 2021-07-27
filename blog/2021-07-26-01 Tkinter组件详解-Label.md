@@ -5,7 +5,7 @@ author: Xxjzp11
 author_title: studying
 author_url: https://github.com/Xxjzp11
 author_image_url: https://avatars2.githubusercontent.com/u/68409850?s=460&u=144d3c818e76fe4b88687db84279fad48b198818&v=4
-tags: [python, notes]
+tags: [python, notes, Tkinter组件详解]
 ---
 
 # 01 Tkinter组件详解-Label
