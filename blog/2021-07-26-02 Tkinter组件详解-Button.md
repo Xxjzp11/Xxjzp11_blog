@@ -159,37 +159,38 @@ master -- 父组件
 
 | 选项                | 含义                                                         |
 | ------------------- | ------------------------------------------------------------ |
-| activebackground    | 1. **设置当 Button 处于活动状态（通过 state 选项设置状态）的背景色** 2. 默认值由系统指定 |
-| activeforeground    | 1. **设置当 Button 处于活动状态（通过 state 选项设置状态）的前景色** 2. 默认值由系统指定 |
-| anchor              | 1. **控制文本（或图像）在 Button 中显示的位置** 2. "n", "ne", "e", "se", "s", "sw", "w", "nw", 或者 "center" 来定位（ewsn 代表东西南北，上北下南左西右东） 3. 默认值是 "center" |
-| background          | 1. **设置背景颜色** 2. 默认值由系统指定                      |
+| activebackground    | 1. **设置当 Button 处于活动状态（通过 state 选项设置状态）的背景色** <br/>2. 默认值由系统指定 |
+| activeforeground    | 1. **设置当 Button 处于活动状态（通过 state 选项设置状态）的前景色** <br/>2. 默认值由系统指定 |
+| anchor              | 1. **控制文本（或图像）在 Button 中显示的位置** <br/>2. "n", "ne", "e", "se", "s", "sw", "w", "nw", 或者 "center" 来定位（ewsn 代表东西南北，上北下南左西右东） <br/>3. 默认值是 "center" |
+| background          | 1. **设置背景颜色** <br/>2. 默认值由系统指定                 |
 | bg                  | 跟 background 一样                                           |
-| bitmap              | 1. **指定显示到 Button 上的位图** 2. 如果指定了 image 选项，则该选项被忽略 |
-| borderwidth         | 1. **指定 Button 的边框宽度** 2. 默认值由系统指定，通常是 1 或 2 像素 |
+| bitmap              | 1. **指定显示到 Button 上的位图** <br/>2. 如果指定了 image 选项，则该选项被忽略 |
+| borderwidth         | 1. **指定 Button 的边框宽度** <br/>2. 默认值由系统指定，通常是 1 或 2 像素 |
 | bd                  | 跟 borderwidth 一样                                          |
-| compound            | 1. **控制 Button 中文本和图像的混合模式** 2. 默认情况下，如果有指定位图或图片，则不显示文本 3. **如果该选项设置为 "center"，文本显示在图像上（文本重叠图像）** 4. 如果该选项设置为 "bottom"，"left"，"right" 或 "top"，那么图像显示在文本的旁边（如 "bottom"，则图像在文本的下方） 5. 默认值是 NONE |
-| cursor              | 1. **指定当鼠标在 Button 上飘过的时候的鼠标样式** 2. 默认值由系统指定 |
-| default             | 1. **如果设置该选项（"normal"），该按钮会被绘制成默认按钮** 2. Tkinter 会根据平台的具体指标来绘制（通常就是绘制一个额外的边框） 2. 默认值是 "disable" |
-| disabledforeground  | 1. **指定当 Button 不可用的时候前景色的颜色** 2. 默认值由系统指定 |
-| font                | 1. **指定 Button 中文本的字体**(注：如果同时设置字体和大小，应该用元组包起来，如 **("楷体", 20)** 2. 一个 Button 只能设置一种字体 3. 默认值由系统指定 |
-| foreground          | 1. **设置 Button 的文本和位图的颜色** 2. 默认值由系统指定    |
+| command             | 1. **指定于该按钮相关联的函数或方法**<br/>2. 当按钮被按下时由 Tkinter 自动调用对应的函数或方法<br/>3. 如果不设置此选项，那么该按钮被按下后啥事儿也不会发生 |
+| compound            | 1. **控制 Button 中文本和图像的混合模式** <br/>2. 默认情况下，如果有指定位图或图片，则不显示文本 <br/>3. **如果该选项设置为 "center"，文本显示在图像上（文本重叠图像）** <br/>4. 如果该选项设置为 "bottom"，"left"，"right" 或 "top"，那么图像显示在文本的旁边（如 "bottom"，则图像在文本的下方） <br/>5. 默认值是 NONE |
+| cursor              | 1. **指定当鼠标在 Button 上飘过的时候的鼠标样式** <br/>2. 默认值由系统指定 |
+| default             | 1. **如果设置该选项（"normal"），该按钮会被绘制成默认按钮** <br/>2. Tkinter 会根据平台的具体指标来绘制（通常就是绘制一个额外的边框） <br/>3. 默认值是 "disable" |
+| disabledforeground  | 1. **指定当 Button 不可用的时候前景色的颜色** <br/>2. 默认值由系统指定 |
+| font                | 1. **指定 Button 中文本的字体**(注：如果同时设置字体和大小，应该用元组包起来，如 **("楷体", 20)** <br/>2. 一个 Button 只能设置一种字体 3. 默认值由系统指定 |
+| foreground          | 1. **设置 Button 的文本和位图的颜色** <br/>2. 默认值由系统指定 |
 | fg                  | 跟 foreground 一样                                           |
-| height              | 1. **设置 Button 的高度** 2. 如果 Button 显示的是文本，那么单位是文本单元 3. 如果 Button 显示的是图像，那么单位是像素（或屏幕单元） 4. 如果设置为 0 或者干脆不设置，那么会自动根据 Button 的内容计算出高度 |
-| highlightbackground | 1. **指定当 Button 没有获得焦点的时候高亮边框的颜色** 2. 默认值由系统指定，通常是标准背景颜色 |
-| highlightcolor      | 1. **指定当 Button 获得焦点的时候高亮边框的颜色** 2. 默认值由系统指定 |
-| highlightthickness  | 1. **指定高亮边框的宽度** 2. 默认值是 0（不带高亮边框）      |
-| image               | 1. **指定 Button 显示的图片** 2. 该值应该是 PhotoImage，BitmapImage，或者能兼容的对象 3. 该选项优先于 text 和 bitmap 选项 |
-| justify             | 1. **定义如何对齐多行文本** 2. 使用 "left"，"right" 或 "center" 3. 注意，文本的位置取决于 anchor 选项 4. 默认值是 "center" |
-| overrelief          | 1. **定义当鼠标飘过时 Button 的样式** 2. 如果不设置，那么总是使用 relief 选项指定的样式 |
-| padx                | 1. **指定 Button 水平方向上的额外间距（内容和边框间）** 2. 单位是像素 |
-| pady                | 1. **指定 Button 垂直方向上的额外间距（内容和边框间）** 2. 单位是像素 |
-| relief              | 1. **指定边框样式** 2. 默认值是 "flat" 3. 另外你还可以设置 "groove", "raised", "ridge", "solid" 或者 "sunken" |
+| height              | 1. **设置 Button 的高度** <br/>2. 如果 Button 显示的是文本，那么单位是文本单元 <br/>3. 如果 Button 显示的是图像，那么单位是像素（或屏幕单元） <br/>4. 如果设置为 0 或者干脆不设置，那么会自动根据 Button 的内容计算出高度 |
+| highlightbackground | 1. **指定当 Button 没有获得焦点的时候高亮边框的颜色** <br/>2. 默认值由系统指定，通常是标准背景颜色 |
+| highlightcolor      | 1. **指定当 Button 获得焦点的时候高亮边框的颜色** <br/>2. 默认值由系统指定 |
+| highlightthickness  | 1. **指定高亮边框的宽度** <br/>2. 默认值是 0（不带高亮边框） |
+| image               | 1. **指定 Button 显示的图片** <br/>2. 该值应该是 PhotoImage，BitmapImage，或者能兼容的对象 <br/>3. 该选项优先于 text 和 bitmap 选项 |
+| justify             | 1. **定义如何对齐多行文本** <br/>2. 使用 "left"，"right" 或 "center" <br/>3. 注意，文本的位置取决于 anchor 选项 <br/>4. 默认值是 "center" |
+| overrelief          | 1. **定义当鼠标飘过时 Button 的样式** <br/>2. 如果不设置，那么总是使用 relief 选项指定的样式 |
+| padx                | 1. **指定 Button 水平方向上的额外间距（内容和边框间）** <br/>2. 单位是像素 |
+| pady                | 1. **指定 Button 垂直方向上的额外间距（内容和边框间）**<br/>2. 单位是像素 |
+| relief              | 1. **指定边框样式** <br/>2. 默认值是 "flat" <br/>3. 另外你还可以设置 "groove", "raised", "ridge", "solid" 或者 "sunken" |
 | repeatdelay         | 见下方 repeatinterval 选项的描述                             |
-| repeatinterval      | 1. **通常当用户鼠标按下按钮并释放的时候系统认为是一次点击动作。如果你希望当用户持续按下按钮的时候（没有松开），根据一定的间隔多次触发按钮，那么你可以设置这个选项** 2. 当用户持续按下按钮的时候，经过 repeatdelay 时间后，每 repeatinterval 间隔就触发一次按钮事件。 3. 例如设置 repeatdelay=1000，repeatinterval=300，则当用户持续按下按钮，在 1 秒的延迟后开始每 300 毫秒触发一次按钮事件，直到用户释放鼠标 |
-| state               | 1. **指定 Button 的状态** 2. 这个标签控制 Button 如何显示 3. 默认值是 "normal 4. 另外你还可以设置 "active" 或 "disabled" |
-| takefocus           | 1. **如果是 True，该 Button 接受输入焦点** 2. 默认值是 False |
-| text                | 1. **指定 Button 显示的文本** 2. 文本可以包含换行符 3. 如果设置了 bitmap 或 image 选项，该选项则被忽略 |
-| textvariable        | 1. **Button 显示 Tkinter 变量（通常是一个 StringVar 变量）的内容** 2. 如果变量被修改，Button 的文本会自动更新 |
-| underline           | 1. **跟 text 选项一起使用，用于指定哪一个字符画下划线（例如用于表示键盘快捷键）**  2. 默认值是 -1 3. 例如设置为 1，则说明在 Button 的第 2 个字符处画下划线 |
-| width               | 1. **设置 Button 的宽度** 2. 如果 Button 显示的是文本，那么单位是文本单元 3. 如果 Button 显示的是图像，那么单位是像素（或屏幕单元） 4. 如果设置为 0 或者干脆不设置，那么会自动根据 Button 的内容计算出宽度 |
-| wraplength          | 1. **决定 Button 的文本应该被分成多少行** 2. 该选项指定每行的长度，单位是屏幕单元 3. 默认值是 0 |
+| repeatinterval      | 1. **通常当用户鼠标按下按钮并释放的时候系统认为是一次点击动作。如果你希望当用户持续按下按钮的时候（没有松开），根据一定的间隔多次触发按钮，那么你可以设置这个选项** <br/>2. 当用户持续按下按钮的时候，经过 repeatdelay 时间后，每 repeatinterval 间隔就触发一次按钮事件。 <br/>3. 例如设置 repeatdelay=1000，repeatinterval=300，则当用户持续按下按钮，在 1 秒的延迟后开始每 300 毫秒触发一次按钮事件，直到用户释放鼠标 |
+| state               | 1. **指定 Button 的状态** <br/>2. 这个标签控制 Button 如何显示 <br/>3. 默认值是 "normal <br/>4. 另外你还可以设置 "active" 或 "disabled" |
+| takefocus           | 1. **如果是 True，该 Button 接受输入焦点** <br/>2. 默认值是 False |
+| text                | 1. **指定 Button 显示的文本** <br/>2. 文本可以包含换行符 <br/>3. 如果设置了 bitmap 或 image 选项，该选项则被忽略 |
+| textvariable        | 1. **Button 显示 Tkinter 变量（通常是一个 StringVar 变量）的内容** <br/>2. 如果变量被修改，Button 的文本会自动更新 |
+| underline           | 1. **跟 text 选项一起使用，用于指定哪一个字符画下划线（例如用于表示键盘快捷键）**  <br/>2. 默认值是 -1 3. 例如设置为 1，则说明在 Button 的第 2 个字符处画下划线 |
+| width               | 1. **设置 Button 的宽度** <br/>2. 如果 Button 显示的是文本，那么单位是文本单元 <br/>3. 如果 Button 显示的是图像，那么单位是像素（或屏幕单元） <br/>4. 如果设置为 0 或者干脆不设置，那么会自动根据 Button 的内容计算出宽度 |
+| wraplength          | 1. **决定 Button 的文本应该被分成多少行** <br/>2. 该选项指定每行的长度，单位是屏幕单元 3. 默认值是 0 |
