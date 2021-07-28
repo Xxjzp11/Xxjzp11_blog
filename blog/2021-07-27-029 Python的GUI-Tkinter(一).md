@@ -8,7 +8,7 @@ author_image_url: https://avatars2.githubusercontent.com/u/68409850?s=460&u=144d
 tags: [python, notes]
 ---
 
-# 029 Python的GUI-Tkinter(一)啊
+# 029 Python的GUI-Tkinter(一)
 
 <!--truncate-->
 
