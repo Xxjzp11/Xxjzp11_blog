@@ -1,6 +1,6 @@
 ---
-id: 029 Python的GUI-Tkinter(一)
-title: 029 Python的GUI-Tkinter(一)
+id: 029 Python的GUI-Tkinter_01
+title: 029 Python的GUI-Tkinter_01
 author: Xxjzp11
 author_title: studying
 author_url: https://github.com/Xxjzp11
@@ -8,7 +8,7 @@ author_image_url: https://avatars2.githubusercontent.com/u/68409850?s=460&u=144d
 tags: [python, notes]
 ---
 
-# 029 Python的GUI-Tkinter
+# 029 Python的GUI-Tkinter_01
 
 <!--truncate-->
 
