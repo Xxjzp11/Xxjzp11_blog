@@ -14,7 +14,7 @@ tags: [python, notes, Tkinter组件详解]
 
 ----------
 
-## 简介啊
+## 简介
 
 **Entry（输入框）组件通常用于获取用户的输入文本**
 
@@ -148,7 +148,7 @@ master.mainloop()
 
 - 使用这种方式来实现输入框内容的滚动
 
-- 需要将鼠标按下事件绑定到 scan_mark(x) 方法（x 是鼠标当前的水平位置），然后再将\<motion> 事件绑定到 scan_dragto(x) 方法（x 是鼠标当前的水平位置），就可以实现输入框在当前位置和 sacn_mack(x) 指定位置之间的水平滚动
+- 需要将鼠标按下事件绑定到 scan_mark(x) 方法（x 是鼠标当前的水平位置），然后再将`<motion> 事件`绑定到 scan_dragto(x) 方法（x 是鼠标当前的水平位置），就可以实现输入框在当前位置和 sacn_mack(x) 指定位置之间的水平滚动
 
 ### select_adjust(index)
 
