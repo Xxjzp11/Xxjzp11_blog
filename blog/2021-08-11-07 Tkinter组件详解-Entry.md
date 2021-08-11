@@ -114,123 +114,121 @@ master.mainloop()
 
 ### delete(first, last=None) 
 
--- 删除参数 first 到 last 范围内（包含 first 和 last）的所有内容
-
--- 如果忽略 last 参数，表示删除 first 参数指定的选项
-
--- 使用 delete(0, END) 实现删除输入框的所有内容
+- 删除参数 first 到 last 范围内（包含 first 和 last）的所有内容
+- 如果忽略 last 参数，表示删除 first 参数指定的选项
+- 使用 delete(0, END) 实现删除输入框的所有内容
 
 ### get()
 
--- 获得当前输入框的内容
+- 获得当前输入框的内容
 
 ### icursor(index)
 
--- 将光标移动到 index 参数指定的位置
+- 将光标移动到 index 参数指定的位置
 
--- 这同时也会设置 INSERT 的值
+- 这同时也会设置 INSERT 的值
 
 ### index(index) 
 
--- 返回与 index 参数相应的选项的序号（例如 e.index(END)）
+- 返回与 index 参数相应的选项的序号（例如 e.index(END)）
 
 ### insert(index, text) 
 
--- 将 text 参数的内容插入到 index 参数指定的位置
+- 将 text 参数的内容插入到 index 参数指定的位置
 
--- 使用 insert(INSERT, text) 将 text 参数指定的字符串插入到光标的位置
+- 使用 insert(INSERT, text) 将 text 参数指定的字符串插入到光标的位置
 
--- 使用 insert(END, text) 将 text 参数指定的字符串插入到输入框的末尾
+- 使用 insert(END, text) 将 text 参数指定的字符串插入到输入框的末尾
 
 ### scan_dragto(x) 
 
---  见下方 scan_mark(x)
+- 见下方 scan_mark(x)
 
 ### scan_mark(x)
 
--- 使用这种方式来实现输入框内容的滚动
+- 使用这种方式来实现输入框内容的滚动
 
--- 需要将鼠标按下事件绑定到 scan_mark(x) 方法（x 是鼠标当前的水平位置），然后再将\<motion> 事件绑定到 scan_dragto(x) 方法（x 是鼠标当前的水平位置），就可以实现输入框在当前位置和 sacn_mack(x) 指定位置之间的水平滚动
+- 需要将鼠标按下事件绑定到 scan_mark(x) 方法（x 是鼠标当前的水平位置），然后再将\<motion> 事件绑定到 scan_dragto(x) 方法（x 是鼠标当前的水平位置），就可以实现输入框在当前位置和 sacn_mack(x) 指定位置之间的水平滚动
 
 ### select_adjust(index)
 
--- 与 selection_adjust(index) 相同，见下方解释
+- 与 selection_adjust(index) 相同，见下方解释
 
 ### select_clear()
 
--- 与 selection_clear() 相同，见下方解释
+- 与 selection_clear() 相同，见下方解释
 
 ### select_from(index)
 
--- 与 selection_from(index) 相同，见下方解释
+- 与 selection_from(index) 相同，见下方解释
 
 ### select_present()
 
--- 与 selection_present() 相同，见下方解释
+- 与 selection_present() 相同，见下方解释
 
 ### select_range(start, end)
 
--- 与 selection_range(start, end) 相同，见下方解释
+- 与 selection_range(start, end) 相同，见下方解释
 
 ### select_to(index)
 
--- 与 selection_to(index) 相同，见下方解释
+- 与 selection_to(index) 相同，见下方解释
 
 ### selection_adjust(index)
 
--- 该方法是为了确保输入框中选中的范围包含 index 参数所指定的字符
+- 该方法是为了确保输入框中选中的范围包含 index 参数所指定的字符
 
--- 如果选中的范围已经包含了该字符，那么什么事情也不会发生
+- 如果选中的范围已经包含了该字符，那么什么事情也不会发生
 
--- 如果选中的范围不包含该字符，那么会从光标的位置将选中的范围扩展至该字符
+- 如果选中的范围不包含该字符，那么会从光标的位置将选中的范围扩展至该字符
 
 ### selection_clear()
 
--- 取消选中状态
+- 取消选中状态
 
 ### selection_from(index)
 
--- 开始一个新的选中范围
+- 开始一个新的选中范围
 
--- 会设置 ANCHOR 的值
+- 会设置 ANCHOR 的值
 
 ### selection_present()
 
--- 返回输入框是否有处于选中状态的文本
+- 返回输入框是否有处于选中状态的文本
 
--- 如果有则返回 True，否则返回 False
+- 如果有则返回 True，否则返回 False
 
 ## selection_range(start, end)
 
--- 设置选中范围
+- 设置选中范围
 
--- start 参数必须必 end 参数小
+- start 参数必须必 end 参数小
 
--- 使用 selection_range(0, END) 选中整个输入框的所有内容
+- 使用 selection_range(0, END) 选中整个输入框的所有内容
 
 ### selection_to(index)
 
--- 选中 ANCHOR 到 index 参数的间的所有内容
+- 选中 ANCHOR 到 index 参数的间的所有内容
 
 ### xview(index)
 
--- 该方法用于确保给定的 index 参数所指定的字符可见
+- 该方法用于确保给定的 index 参数所指定的字符可见
 
--- 如有必要，会滚动输入框的内容
+- 如有必要，会滚动输入框的内容
 
 ### xview_moveto(fraction)
 
--- 根据 fraction 参数给定的比率调整输入框内容的可见范围
+- 根据 fraction 参数给定的比率调整输入框内容的可见范围
 
--- fraction 参数的范围是 0.0 ~ 1.0，0.0 表示输入框的开始位置，1.0 表示输入框的结束位置
+- fraction 参数的范围是 0.0 ~ 1.0，0.0 表示输入框的开始位置，1.0 表示输入框的结束位置
 
 ### xview_scroll(number, what)
 
--- 根据给定的参数水平滚动输入框的可见范围
+- 根据给定的参数水平滚动输入框的可见范围
 
--- number 参数指定滚动的数量，如果是负数则表示反向滚动
+- number 参数指定滚动的数量，如果是负数则表示反向滚动
 
--- what 参数指定滚动的单位，可以是 UNITS 或 PAGES（UNITS 表示一个字符单元，PAGES 表示一页）
+- what 参数指定滚动的单位，可以是 UNITS 或 PAGES（UNITS 表示一个字符单元，PAGES 表示一页）
 
 ------------------
 
